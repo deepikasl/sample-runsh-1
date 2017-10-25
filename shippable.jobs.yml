@@ -3,10 +3,11 @@ jobs:
     type: runSh
     steps:
       - IN: testncr
-      - IN: oldnc
+      - IN: testintegrationncr
       - TASK:
         - script: echo "integration name------>-"$TESTNCR_NAME
         - script: echo "node ------>-"$TESTNCR_INTEGRATION_NODES
-        - script: echo "old int name ------->-"$OLDNC_NAME
-        - script: echo "node ------->-"$OLDNC_INTEGRATION_NODES
+        - script: echo "---integration typed resource---"
+        - script: echo "int name ------->-"$TESTINTEGRATIONNCR_NAME
+        - script: echo "node ------->-"$TESTINTEGRATIONNCR_INTEGRATION_NODES
     
