@@ -3,3 +3,6 @@ resources:
     type: cluster
     integration: deepika-nc
     
+  - name: oldnc
+    type: cluster
+    integration: deepika-old-nc
