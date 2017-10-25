@@ -1,5 +1,5 @@
 resources:     
-  - name: test_node_cluster
+  - name: testncr
     type: cluster
-    integration: test_node_cluster
+    integration: deepika-nc
     
