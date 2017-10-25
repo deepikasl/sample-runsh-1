@@ -10,9 +10,3 @@ jobs:
         - script: echo "old int name ------->-"$OLDNC_NAME
         - script: echo "node ------->-"$OLDNC_INTEGRATION_NODES
     
- 
-     
-  
-  
-        
-  
