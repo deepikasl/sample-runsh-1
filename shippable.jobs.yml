@@ -6,9 +6,9 @@ jobs:
       - IN: oldnc
       - TASK:
         - script: echo "integration name------>-"$TESTNCR_NAME
-        - script: echo "node ------>-"$TESTNCR_INTEGRATION_NODES_0
+        - script: echo "node ------>-"$TESTNCR_NODES_0
         - script: echo "old int name ------->-"$OLDNC_NAME
-        - script: echo "node ------->-"$OLDNC_INTEGRATION_NODES_0
+        - script: echo "node ------->-"$OLDNC_NODES_0
     
  
      
