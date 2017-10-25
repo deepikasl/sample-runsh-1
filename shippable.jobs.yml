@@ -1,37 +1,12 @@
 jobs:
-  - name: sample-runsh-jf-new
+  - name: test-runSh
     type: runSh
-    allowPublicAccess: true
     steps:
-      - IN: sample-testjf-new
-        showBuildStatus: true
-      - IN: trigger-jf-new
-      - IN: test-cli-jfrog-new
-      #- IN: test-jfrogfile
-    #  - IN: test-trigger01
+      - IN: testncr
       - TASK:
-        - script: IN/sample-testjf-new/gitRepo/echo.sh 
-        - script: sudo jfrog rt u IN/sample-testjf-new/gitRepo/testgeneric.sh test-jfrog-ship
-        - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
-    flags: bar
+        - script: echo "integration name------>-"$TESTNCR_NAME
+        - SCRIPT: ECHO "node ------>-"$TESTNCR_INTEGRATION_NODES_0
     
-    
-  - name: manifest-jfrog
-    type: manifest
-    steps:
-      - IN: test-jfrogfiles-new
-    flags: foo
-      
-  - name: deploy-jfrog
-    type: deploy
-    steps:
-      - IN: manifest-jfrog
-        force: true
-      - IN: test_node_cluster
-      - TASK:
-        - script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
-       # - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
-    flags: foo
  
      
   
