@@ -1,8 +1,12 @@
 resources:     
   - name: testncr
-    type: integration
+    type: cluster
     integration: deepika-nc
     
   - name: oldnc
-    type: integration
+    type: cluster
     integration: deepika-old-nc
+
+  - name: testintegrationncr
+    type: integration
+    integration: deepika-nc
