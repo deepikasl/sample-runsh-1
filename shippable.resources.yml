@@ -3,9 +3,9 @@ resources:
     type: cluster
     integration: deepika-nc
     
-  - name: oldnc
-    type: cluster
-    integration: deepika-old-nc
+  #- name: oldnc
+   # type: cluster
+   # integration: deepika-old-nc
 
   - name: testintegrationncr
     type: integration
