@@ -1,5 +1,5 @@
 jobs:
-  - name: test-runSh
+  - name: test-runSh-adk
     type: runSh
     steps:
       - IN: testadk
