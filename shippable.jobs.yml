@@ -2,12 +2,15 @@ jobs:
   - name: test-runSh
     type: runSh
     steps:
-      - IN: testncr
-      - IN: testintegrationncr
+      - IN: testadk
+      - IN: testintegrationadk
       - TASK:
-        - script: echo "integration name------>-"$TESTNCR_NAME
-        - script: echo "node ------>-"$TESTNCR_INTEGRATION_NODES
+      - script: echo "---cluster typed resource---"
+        - script: echo "integration name------>-"$TESTADK_NAME
+        - script: echo "username ------>-"$TESTADK_INTEGRATION_USERNAME
+        - script: echo "url--------->-"$TESTADK_INTEGRATION_URL	
         - script: echo "---integration typed resource---"
-        - script: echo "int name ------->-"$TESTINTEGRATIONNCR_NAME
-        - script: echo "node ------->-"$TESTINTEGRATIONNCR_INTEGRATION_NODES
+        - script: echo "int name ------->-"$TESTINTEGRATIONADK_NAME
+        - script: echo "username ------->-"$TESTINTEGRATIONADK_INTEGRATION_NODES
+        - script: echo "url--------->-"$TESTINTEGRATIONADK_INTEGRATION_URL	
     
