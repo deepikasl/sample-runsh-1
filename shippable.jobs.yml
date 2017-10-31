@@ -11,6 +11,6 @@ jobs:
         - script: echo "url--------->-"$TESTADK_INTEGRATION_URL	
         - script: echo "---integration typed resource---"
         - script: echo "int name ------->-"$TESTINTEGRATIONADK_NAME
-        - script: echo "username ------->-"$TESTINTEGRATIONADK_INTEGRATION_NODES
+        - script: echo "username ------->-"$TESTINTEGRATIONADK_INTEGRATION_USERNAME
         - script: echo "url--------->-"$TESTINTEGRATIONADK_INTEGRATION_URL	
     
