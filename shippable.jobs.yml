@@ -5,7 +5,7 @@ jobs:
       - IN: testadk
       - IN: testintegrationadk
       - TASK:
-      - script: echo "---cluster typed resource---"
+        - script: echo "---cluster typed resource---"
         - script: echo "integration name------>-"$TESTADK_NAME
         - script: echo "username ------>-"$TESTADK_INTEGRATION_USERNAME
         - script: echo "url--------->-"$TESTADK_INTEGRATION_URL	
