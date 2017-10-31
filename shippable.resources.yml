@@ -1,12 +1,12 @@
 resources:     
-  - name: testncr
+  - name: testadk
     type: cluster
-    integration: deepika-nc
+    integration: deepika-azureDcosKey
     
   #- name: oldnc
    # type: cluster
    # integration: deepika-old-nc
 
-  - name: testintegrationncr
+  - name: testintegrationadk
     type: integration
-    integration: deepika-nc
+    integration: deepika-azureDcosKey
