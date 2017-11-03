@@ -1,5 +1,5 @@
 triggers:
-  - name: trigger-jf-new
+  - name: trigger-jf-new-webhook
     type: trigger
     version:
       counter: 9
