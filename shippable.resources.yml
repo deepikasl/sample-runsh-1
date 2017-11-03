@@ -1,12 +1,4 @@
 resources:     
-  - name: testncr
-    type: cluster
-    integration: deepika-nc
-    
-  #- name: oldnc
-   # type: cluster
-   # integration: deepika-old-nc
-
-  - name: testintegrationncr
+  - name: testintegrationwebhook
     type: integration
-    integration: deepika-nc
+    integration: deepika-webhookV2
