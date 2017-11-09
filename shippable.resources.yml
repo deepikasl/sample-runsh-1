@@ -1,4 +1,4 @@
 resources:     
   - name: testintegrationwebhook
     type: integration
-    integration: test-old-webhook  #deepika-webhookV2
+    integration: test-generictrigger  #deepika-webhookV2
